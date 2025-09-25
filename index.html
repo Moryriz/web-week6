@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Developers - Interactive Web Pages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Wolf Developers</h1>
+    </header>
+
+    <main>
+        <!-- Light/Dark Mode Toggle -->
+        <section id="modeSection">
+            <button id="toggleModeBtn">Toggle Light/Dark Mode</button>
+        </section>
+
+        <!-- Counter Game -->
+        <section id="counterSection">
+            <h2>Wolf Developers Counter Game</h2>
+            <button id="incrementBtn">Increment</button>
+            <p>Counter: <span id="counter">0</span></p>
+        </section>
+
+        <!-- Collapsible FAQ -->
+        <section id="faqSection">
+            <h2>FAQ - Wolf Developers</h2>
+            <div class="faq-item">
+                <button class="faq-toggle">What is JavaScript?</button>
+                <p class="faq-content">JavaScript is a programming language used to create interactive effects within web browsers.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-toggle">What is DOM manipulation?</button>
+                <p class="faq-content">DOM manipulation refers to the ability to modify the structure, content, and style of a web page using JavaScript.</p>
+            </div>
+        </section>
+
+        <!-- Form with Validation -->
+        <section id="formSection">
+            <h2>Wolf Developers Registration Form</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <span id="nameError" class="error"></span>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span id="emailError" class="error"></span>
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <span id="passwordError" class="error"></span>
+                <br>
+
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <!-- Tabbed Interface -->
+        <section id="tabsSection">
+            <h2>Tabbed Interface</h2>
+            <div class="tabs">
+                <button class="tab-button" data-tab="tab1">Tab 1</button>
+                <button class="tab-button" data-tab="tab2">Tab 2</button>
+                <button class="tab-button" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content" id="tab1">
+                <p>This is the content for Tab 1.</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <p>This is the content for Tab 2.</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <p>This is the content for Tab 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wolf Developers - Crafting the Future of Software</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
