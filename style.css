@@ -1,0 +1,96 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    color: red; /* Wolf Developers in red */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.tab-button {
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #0b7dda;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: #555;
+}
